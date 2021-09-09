@@ -1,40 +1,88 @@
-YOUR NAME Lab 2: Intro to HTML
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'/>
+    <title>Kamran Djourshari Lab 2</title>
+</head>
 
-Selectors
-Main Page
+<body>
+    <div class="wrapper">
+        <h1 class='title'>Kamran Djourshari Lab 2: CSS Selectors</h1>
+        <nav>
+            <a class= "wrapper" href="selectors.html">Selectors</a></li>
+            <a class= "wrapper" href="index.html">Main Page</a>
+        </nav>
+    </div>
 
-First, the basics.
+    <div class='wrapper'>
+        <h2 class="subtitle">First, the basics.</h2>
+        <p>You need the following to build your website.</p>
+    </div>
+    <div class="section_1 wrapper">
+        <div>
+            <ul>
+                <li>HTML and CSS</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>And other web development frameworks</li>
+            </ul>
+        </div>
+        <div>
+            <p>You should list your top 5 music albums below.</p>
+            <ol> 
+                <li><em>Californication</em> by Red Hot Red Hot Chili Peppers</li>
+                <li><em>Night Visions</em> by Imagine Dragons</li>
+                <li><em>Ten</em> by Pearl Jam</li>
+                <li><em>August and Everything After</em> by Counting Crows</li>
+                <li><em>A Head Full of Dreams</em> by Coldplay</li>
+            </ol>
+        </div>
+    </div>
 
-You need the following to build your website.
+    <div class="section_2 wrapper">
+        <h2 class="subtitle">Let's Try Some Inline Elements</h2>
+        <p>Sometimes you want to <em>draw attention to something</em> in a line 
+            of text.</p>
+        <p>Sometimes you want to <strong>strongly emphasize something</strong>
+             in the text.</p>
+        <p>Sometimes you want to <strong><em>do both</em></strong>.</p>
+    </div>
 
-HTML and CSS
-Javascript
-Node.js
-And other web development frameworks
+    <div class="wrapper">
+    <h2 class="section_3">Empty Elements</h2>
+    <p>Soft line breaks can't wrap anything.<br/>
+        Neither can image tags, or hard lines.<br/>
+        Add a hard line under here, and make sure you've used some soft line 
+        breaks to match your page to the sample.</p>
+    </div>
+    <hr/>
 
-You should list your top 3 goals for the class below.
+    <div class="section_4 wrapper">
+        <div class='text'>
+            <h2>Images</h2>
+            <p>Include the four images in the /image folder below</p>
+            <p>Don't forget to use alt text on your images. It's important for 
+                accessibility.</p>
+        </div>
+        <div class="carousel">
+            <div class='slides'>
+                <img src='images/onigiri_1.png' width='75' alt="A smiling and joyful onigiri."/>
+                <img src='images/onigiri_2.png' width='75' alt="A content/serious onigiri."/>
+                <img src='images/onigiri_3.png' width='75' alt="An embarrased onigiri."/>
+                <img src='images/onigiri_4.png' width='75' alt="A shy onigiri."/>
+            </div>
+        </div>
+    </div>
+    </br>
 
-Learn front-end web design
-Learn new programming languages
-Learn how to work with others in a technical space
-Learn popular web dev frameworks
+    <div class="wrapper">
+    <p class='default'><a href='https://github.com/KamranDjourshari24/INST377-Lab-Work'>
+        My github repository can be found here.</a></p>
+    <p class='default'>If you want your repo to be private, be sure to invite Prof A as a 
+        "collaborator."</p>
+    </div>
 
-Let's Try Some Inline Elements
-
-Sometimes you want to draw attention to something in a line of text.
-
-Sometimes you want to strongly emphasize something in the text.
-
-Sometimes you want to do both.
-
-Empty Elements
-
-Soft line breaks can't wrap anything. Neither can image tags, or hard lines.
-Add a hard line under here, and make sure you've used some soft line breaks to match your page to the sample.
-
-Images 
-
-Don't forget to use alt text on your images. It's important for accessibility.
-
-Include a hyperlink here to your github repository for class.
-If you want your repo to be private, be sure to invite Prof A as a "collaborator."
+</body>
+</html>
