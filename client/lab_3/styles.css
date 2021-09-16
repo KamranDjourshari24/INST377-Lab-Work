@@ -1,1 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .database > a, .main-page > a {
+    text-decoration: none;
+    padding: 2px;
+    color: #fff;
+  }
+
+  .group-project > a, .github > a {
+    text-decoration: none;
+    padding: 2px;
+    color: #5995DA;
+  }
+  
+  a:hover {
+    background-color: springgreen;
+    display: inline-block;
+    border-radius: 2px;
+  }
+
+  a:active {
+    color: purple;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, 
+      ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+  }
+
+  .top-bar {
+    display: inline-block;
+    background-color: rgba(0,139, 139,0.8);
+    padding: 5px 10px;
+  }
+  
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links {
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+    color: #fff
+  }
+  
+  .main-page {
+    margin-left: 20px;
+  }
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .first-item {
+    order: 1;
+  }
+
+  .last-item {
+    order: -1;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;  
+  }
+
+  .github,
+  .group-project {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  .footer-three {
+    flex: 2;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+  }
+  
+  .database {
+    margin-left: 15px;
+  }
 
