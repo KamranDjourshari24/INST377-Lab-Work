@@ -11,7 +11,8 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    'linebreak-style': [1, 'unix'],
+    /* added windows (if causes issues, remove 'windows') */
+    'linebreak-style': [1, 'unix', 'windows'],
     'newline-per-chained-call': [0],
     semi: [1, 'always'],
     'eol-last': [0],
