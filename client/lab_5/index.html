@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport'
+    content='width=device-width, initial-scale=1.0, maximum-scale=.8' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Kamran Djourshari HTML Forms, HTTP Methods, REST APIs</title>
+</head>
+
+<body>
+    <div class="columns wrapper container">
+        <div class="column title is-size-3 is-11">
+            Kamran Djourshari's Lab 5
+        </div>
+
+        <div class="mid-level is-mobile">
+            <div class="column box is-5">
+                <form action='/api' method='get' class='speaker-form'>
+                    <div class="field">
+                        <label class="label" for="first-name">First Name</label>
+                        <div class="control">
+                            <input class="input is-small" id="first-name" type="text">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="food-pref">Food Preference</label>
+                        <div class="control">
+                            <input class="input is-small" id="food-pref" type="text">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <legend><strong>Veggie or Vegan?</strong></legend>
+                        <label for="yes-to-ques" class="radio">Yes</label>
+                        <input id="yes-to-ques" name="veggie-vegan" type="radio" value="yes"/>
+                        <label for="no-to-ques" class="radio">No</label>
+                        <input id="no-to-ques" name="veggie-vegan" type="radio" value="no"/>
+                    </div>
+                    <div class="field control">
+                        <button class="button is-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="column is-12">
+                <div class="box">
+                    This is going to be something in two weeks.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
