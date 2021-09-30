@@ -12,7 +12,7 @@ module.exports = {
   },
   rules: {
     /* added windows (if causes issues, remove 'windows') */
-    'linebreak-style': [1, 'unix', 'windows'],
+    'linebreak-style': [1, 'unix'],
     'newline-per-chained-call': [0],
     semi: [1, 'always'],
     'eol-last': [0],
