@@ -8,7 +8,7 @@ async function windowActions() {
     return possibleCities.filter((place) => {
       // find out if the city or state the query was
       const regex = new RegExp(wordQuery, 'gi');
-      return place.name.match(regex) || place.category.match(regex) || place.zip.match(regex);
+      return place.name.match(regex) || place.category.match(regex);
     });
   }
 
@@ -21,7 +21,6 @@ async function windowActions() {
       const regex = new RegExp(event.target.value, 'gi');
       const resName = place.name.replace(regex, `<span class="hl"> ${event.target.value}</span>`);
       const catName = place.category.replace(regex, `<span class="hl"> ${event.target.value}</span>`);
-      const zipName = place.zip.replace(regex, `<span class="hl"> ${event.target.value}</span>`);
       return `
             <li>
                 <span>${resName}</span> 
@@ -32,7 +31,7 @@ async function windowActions() {
                 <br/> 
                 <span class="city">${place.city}</span> 
                 <br/>
-                <span class="zip">${zipName}</span>
+                <span class="zip">${place.zip}</span>
                 <br/>
             </li> 
             <br/>       
