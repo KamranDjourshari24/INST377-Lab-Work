@@ -41,13 +41,7 @@ async function windowActions() {
     possibleSuggestions.innerHTML = html;
   }
 
-  searchInput.addEventListener('change', (event) => {
-    if (searchInput.value === '') {
-      possibleSuggestions.innerHTML = '';
-    } else {
-      displayMatches(event);
-    }
-  });
+  searchInput.addEventListener('change', displayMatches);
 
   searchInput.addEventListener('keyup', (event) => {
     if (searchInput.value === '') {
