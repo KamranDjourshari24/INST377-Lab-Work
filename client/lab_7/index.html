@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport'
+    content='width=device-width, initial-scale=1.0, maximum-scale=.8' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        ntegrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+    <title>Kamran Djourshari JSON to Map Markers</title>
+</head>
+
+<body>
+    <div class="columns">
+        <div class="left-column">
+            
+            <div class="column">
+                <div class="title">
+                    <h1>Kamran Djourshari: Lab 7</h1>
+                    <span class="subtitle is-4">
+                        Zip Code Food Search
+                    </span>
+                </div>
+            </div>
+            <form onsubmit="return false;">
+                <div class="column search">
+                    <div class="control">
+                        <label for="query"><strong>Search</strong></label>
+                    </div>
+                    <input class="input is-medium" id="query" type="text" placeholder="Enter ZipCode or Name">
+                </div>
+        
+                <div class="column suggestions">
+                    <ul></ul>
+                </div>
+            </form>
+        </div>
+
+        <div class="column map">
+            <div id="mapid"></div>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
