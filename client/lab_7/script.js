@@ -18,11 +18,12 @@ async function dataHandler() {
   const markerGroup = L.layerGroup().addTo(mymap);
 
   function findMatches(wordQuery, possibleCities) {
-    return possibleCities.filter((place) => {
+    city = possibleCities.filter((place) => {
       // find out if the city or state the query was
       const regex = new RegExp(wordQuery, 'gi');
       return place.zip.match(regex);
     });
+    return city.filter((item) => item.geocoded_column_1 !== undefined);
   }
 
   const searchInput = document.querySelector('#query');
@@ -31,7 +32,7 @@ async function dataHandler() {
   function displayMatches(event) {
     const matchArray = findMatches(event.target.value, cities);
     const filteredList = matchArray.splice(0, 5);
-    if (!searchInput.value) {
+    if ((!searchInput.value) || (filteredList.length === 0)) {
       possibleSuggestions.innerHTML = '';
       markerGroup.clearLayers();
     } else {
